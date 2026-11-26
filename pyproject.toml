@@ -3,6 +3,8 @@ name = "wods"
 version = "0.1.0"
 description = "A dataset format for world models."
 readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
 authors = [
     { name = "Xiang Fan", email = "xiangfan00@gmail.com" }
 ]
