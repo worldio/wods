@@ -1,0 +1,56 @@
+[project]
+name = "wods"
+version = "0.1.0"
+description = "A dataset format for world models."
+readme = "README.md"
+authors = [
+    { name = "Xiang Fan", email = "xiangfan00@gmail.com" }
+]
+dependencies = [
+    "datasets",
+    "einops",
+    "easydict",
+    "fsspec",
+    "gcsfs>=2025.2.0",
+    "h5py",
+    "imageio",
+    "ipython",
+    "imageio-ffmpeg",
+    "numpy",
+    "openexr>=3.4.3",
+    "pycocotools~=2.0",
+    "timm",
+    "torch",
+    "torchvision",
+    "tqdm",
+    "zstandard",
+    "transformers>=4.50",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/worldio/wods"
+
+[dependency-groups]
+dev = [
+    "cd-fvd~=0.1",
+    "diffusers>=0.35",
+    "hf_transfer>=0.1",
+    "lerobot[libero]>=0.5",
+    "matplotlib",
+    "mujoco==3.7.0",
+    "loguru~=0.7",
+    "opencv-python",
+    "ninja",
+    "piq~=0.8",
+    "plyfile~=1.1",
+    "projectaria-tools",
+    "psutil~=7.1",
+    "scipy",
+    "setuptools",
+    "torch-tb-profiler~=0.4",
+    "transnetv2-pytorch",
+]
+
+[build-system]
+requires = ["uv_build>=0.8.13,<0.9.0"]
+build-backend = "uv_build"
